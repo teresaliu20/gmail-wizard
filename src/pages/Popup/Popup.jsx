@@ -19,6 +19,7 @@ const Popup = () => {
         >
           Learn React
         </a>
+        <p>{window.location.href}</p>
       </header>
     </div>
   );
