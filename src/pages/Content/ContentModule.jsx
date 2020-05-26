@@ -11,6 +11,7 @@ class ContentModule extends React.Component {
           <div className="cm-ks-wrapper">
             {keyboardShortcutsData.map((ksSection) => (
               <div className="cm-ks-section">
+                <hr />
                 <h3 className="cm-ks-section-title">{ksSection.title}</h3>
                 {ksSection.shortcuts.map((ks) => (
                   <div className="cm-ks-row">
@@ -20,6 +21,10 @@ class ContentModule extends React.Component {
                 ))}
               </div>
             ))}
+            <hr />
+            <p className="cm-ks-action">For full list of Gmail shortcuts</p>
+            <p className="cm-ks-keys">?</p>
+            <p className="cm-ks-section-desc">Note: Keyboard shortcuts must be enabled in Gmail settings</p>
           </div>
         </div>
       </div>

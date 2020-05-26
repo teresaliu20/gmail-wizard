@@ -15,7 +15,7 @@ body {
 
 .bhZ + .bkK {
   margin: auto !important;
-  max-width: 70%;
+  max-width: 65%;
 }
 
 .gb_tc {
@@ -57,7 +57,7 @@ span, a{
 #cm {
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    width: 360px;
+    width: 370px;
     height: 460px;
     position: fixed;
     border-radius: 5px;
