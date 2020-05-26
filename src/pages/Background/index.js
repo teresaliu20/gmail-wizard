@@ -4,22 +4,28 @@ import '../../assets/img/icon-128.png';
 console.log('This is the background page.');
 console.log('Put the background scripts here.');
 
+
 // add in keyboard shortcut to toggle keyboard shortcuts menu
-chrome.commands.onCommand.addListener(function (command) {
+chrome.commands.onCommand.addListener((command) => {
   console.log('Background: ', command);
-  if (command === 'toggle-help') {
+  if (command === 'command-toggle-shortcut-menu') {
     // send message to content script
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id, { action: command });
     });
     // send message to popup
     chrome.runtime.sendMessage({ action: command });
+    
+    // save shortcut menu visibility based on command
+    chrome.storage.local.get({'shortcutsMenuShow' : false}, (result) => {
+      chrome.storage.local.set({'shortcutsMenuShow': !result.shortcutsMenuShow});
+    });
   }
 });
 
 // only enable the extension on Gmail
-chrome.runtime.onInstalled.addListener(function () {
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
     chrome.declarativeContent.onPageChanged.addRules([
       {
         conditions: [

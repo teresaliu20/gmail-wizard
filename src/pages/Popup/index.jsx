@@ -10,10 +10,14 @@ console.log(window.location.href.startsWith('https://mail.google.com/'))
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
-chrome.windows.getCurrent(function(w) {
+chrome.windows.getCurrent((w) => {
     chrome.tabs.getSelected(w.id,
-    function (response){
-        render(<Popup />, window.document.querySelector('#app-container'));
+    (response) => {
+        chrome.storage.local.get({'minimizedViewShow' : true, 'shortcutsMenuShow': true}, (result) => {
+          console.log("result in popup")
+          console.log(result)
+          render(<Popup minimizedViewShow={result.minimizedViewShow} shortcutsMenuShow={result.shortcutsMenuShow}/>, window.document.querySelector('#app-container'));
+        });
     });
 });
 

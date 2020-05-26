@@ -8,6 +8,7 @@ class ContentModule extends React.Component {
     return (
       <div className='cm-content gwiz'>
         <h2 className="title">Keyboard Shortcuts</h2>
+        <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to toggle the shortcuts menu</p>
         <div>
           <div className="cm-ks-wrapper">
             {keyboardShortcutsData.map((ksSection) => (

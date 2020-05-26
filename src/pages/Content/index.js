@@ -5,35 +5,68 @@ import ReactDOM from 'react-dom';
 
 console.log('Content script works!');
 console.log('Must reload extension for modifications to take effect.');
-console.log('trying to modify gmail')
+console.log('trying to modify gmail');
 
 printLine("Using the 'printLine' function from the Print Module");
 
 const app = document.createElement('div');
-app.id = "cm";
+app.id = 'cm';
+
 document.body.appendChild(app);
-document.body.classList.add("minimized");
+document.body.classList.add('minimized');
 
 ReactDOM.render(<ContentModule />, app);
+// contentModule.style.visibility = "hidden";
 
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log("content script: on message: ", request.action)
-
-  // toggle content module based on command toggle-help
-  if (request.action === 'toggle-help') {
+// get initial state of options from storage for initial content
+chrome.storage.local.get(
+  { minimizedViewShow: true, shortcutsMenuShow: true },
+  (result) => {
     const contentModule = document.getElementById(app.id);
-    if (contentModule.style.visibility === "hidden") {
-      contentModule.style.visibility = "visible";
+    
+    // show shortcut menu based on options in storage
+    if (result.shortcutsMenuShow) {
+      contentModule.style.visibility = 'visible';
     } else {
-      contentModule.style.visibility = "hidden";
+      contentModule.style.visibility = 'hidden';
+    }
+
+    // show minimized view based on options in storage
+    if (result.minimizedViewShow) {
+      document.body.classList.add('minimized');
+      document
+        .getElementsByClassName('nH oy8Mbf nn aeN')[0]
+        .classList.add('bhZ');
+      document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
+    } else {
+      document.body.classList.remove('minimized');
     }
   }
-  else if (request.action === 'minimize-on') {
-    document.body.classList.add("minimized");
-    document.getElementsByClassName('nH oy8Mbf nn aeN')[0].classList.add('bhZ')
-    document.getElementsByClassName('nH bAw nn')[0].classList.add('it')
-  }
-  else if (request.action === 'minimize-off') {
-    document.body.classList.remove("minimized");
+);
+
+// listen to changes in storage to change content on page
+chrome.storage.onChanged.addListener((changes, namespace) => {
+
+  const contentModule = document.getElementById(app.id);
+
+  // toggle shortcut menu
+  if ('shortcutsMenuShow' in changes) {
+    if (changes.shortcutsMenuShow.newValue === true) {
+      contentModule.style.visibility = 'visible';
+    } else {
+      contentModule.style.visibility = 'hidden';
+    }
+
+  // toggle minimized view
+  } else if ('minimizedViewShow' in changes) {
+    if (changes.minimizedViewShow.newValue === true) {
+      document.body.classList.add('minimized');
+      document
+        .getElementsByClassName('nH oy8Mbf nn aeN')[0]
+        .classList.add('bhZ');
+      document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
+    } else {
+      document.body.classList.remove('minimized');
+    }
   }
 });

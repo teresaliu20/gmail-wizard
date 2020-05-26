@@ -20,7 +20,7 @@
     }
   ],
   "commands": {
-    "toggle-help": {
+    "command-toggle-shortcut-menu": {
       "suggested_key": {
         "default": "Ctrl+Shift+Y",
         "mac": "Command+Shift+Y"
@@ -35,7 +35,8 @@
   ],
   "permissions": [
     "tabs",
-    "declarativeContent"
+    "declarativeContent",
+    "storage"
   ],
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
