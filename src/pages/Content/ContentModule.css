@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+#cm .cm-content {
+  padding: 10px 25px;
+}
+
+#cm .cm-title {
+  margin: 10px 0;
+}
+
+#cm .cm-ks-wrapper {
+  font-size: 14px;
+  width: 100%;
+}
+
+#cm .cm-ks-wrapper p {
+  margin: 5px 0;
+}
+
+#cm .cm-ks-section-title {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+
+#cm .cm-ks-section-desc {
+  font-style: italic;
+  color: #777;
+}
+
+#cm .cm-ks-row {
+  margin: 2px 0;
+}
+
+#cm .cm-ks-action {
+  display: inline-block;
+  width: 170px;
+  color: #777;
+  padding: 3px 0;
+}
+
+#cm .cm-ks-keys {
+  display: inline-block;
+  font-size: 12px;
+  color: #b881e6;
+  background-color: #faf7fc;
+  border-radius: 2px;
+  padding: 4px;
+}

@@ -3,26 +3,17 @@ import logo from '../../assets/img/logo.svg';
 import Greetings from '../../containers/Greetings/Greetings';
 import './Popup.css';
 
-const Popup = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Popup/Popup.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>{window.location.href}</p>
-      </header>
-    </div>
-  );
-};
+class Popup extends React.Component {
+
+  render() {
+    return (
+      <div className="App">
+        <h1>📬 Wizard</h1>
+        <p>Show Keyboard Shortcuts Help Bar: </p>
+        <p>Shift + Cmd/ctr + Y</p>
+      </div>
+    );
+  }
+}
 
 export default Popup;
