@@ -1,0 +1,13 @@
+.popup p {
+  font-size: 16px;
+}
+
+.popup .pu-toggle {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.popup .pu-toggle-label {
+  display: inline-block;
+  margin: .8em 0;
+}

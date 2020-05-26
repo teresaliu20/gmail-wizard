@@ -56,6 +56,7 @@ const keyboardShortcutsData = [
     shortcuts: [
       { action: 'Compose', 'keys': 'c' },
       { action: 'Compose in new tab', 'keys': 'd' },
+      { action: 'Close compose window', 'keys': 'esc' },
       { action: 'Send', 'keys': 'Cmd/Ctrl + Enter' },
       { action: 'Add cc recipients', 'keys': 'Cmd/Ctrl + Shift + c' },
       { action: 'Add bcc recipients', 'keys': 'Cmd/Ctrl + Shift + b' },

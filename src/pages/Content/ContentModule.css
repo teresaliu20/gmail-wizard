@@ -16,15 +16,9 @@
   margin: 10px 0;
 }
 
-#cm .cm-ks-wrapper {
-  font-size: 14px;
-  width: 100%;
-}
-
 #cm p {
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #777;
 }
 
 #cm .cm-ks-section {
@@ -37,7 +31,6 @@
 
 #cm .cm-ks-section-desc {
   font-style: italic;
-  color: #777;
 }
 
 #cm .cm-ks-row {
@@ -50,14 +43,4 @@
   margin-right: 5px;
   color: #777;
   padding: 3px 0;
-}
-
-#cm .cm-ks-keys {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 12px;
-  color: #b881e6;
-  background-color: #faf7fc;
-  border-radius: 2px;
-  padding: 4px 8px;
 }

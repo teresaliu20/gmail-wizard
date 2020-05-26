@@ -5,51 +5,51 @@ body {
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 }
 
-.yO {
+.minimized .yO {
   background: white !important;
 }
 
-.bhZ {
+.minimized .bhZ {
   display: none !important;
 }
 
-.bhZ + .bkK {
+.minimized .bhZ + .bkK {
   margin: auto !important;
   max-width: 65%;
 }
 
-.gb_tc {
+.minimized .gb_tc {
   display: none !important;
 }
 
-.zA {
+.minimized .zA {
   box-shadow: none !important;
 }
 
-.zA:hover {
+.minimized .zA:hover {
   box-shadow: 1px 0px 0px 1px rgba(100,121,143,0.122) !important;
 }
 
 
-.Tm::-webkit-scrollbar {
+.minimized .Tm::-webkit-scrollbar {
   width: 10px !important;
 }
 
 
-.Tm::-webkit-scrollbar-thumb {
+.minimized .Tm::-webkit-scrollbar-thumb {
   background-color: rgba(0,0,0,0.1) !important;
   -webkit-box-shadow: none !important;
 }
 
-.Tm::-webkit-scrollbar-track {
+.minimized .Tm::-webkit-scrollbar-track {
 
 }
 
-.Tm::-webkit-scrollbar-thumb:hover {
+.minimized .Tm::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: none !important;
 }
 
-span, a{
+.minimized span, a{
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
 }
