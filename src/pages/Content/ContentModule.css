@@ -27,21 +27,17 @@
 }
 
 #cm .cm-ks-section-title {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 #cm .cm-ks-section-desc {
   font-style: italic;
 }
 
-#cm .cm-ks-row {
-  margin: 2px 0;
-}
-
 #cm .cm-ks-action {
   display: inline-block;
   width: 180px;
-  margin-right: 5px;
   color: #777;
-  padding: 3px 0;
+  padding: 0 0 3px 0;
+  margin: 0 12px 8px 0;
 }

@@ -1,6 +1,7 @@
 .gwiz p {
   line-height: 1.5em;
   color: #777;
+  letter-spacing: 0.2px;
 }
 
 .gwiz .ss-ks-keys {
@@ -12,4 +13,19 @@
   background-color: #faf7fc;
   border-radius: 2px;
   padding: 4px 8px;
+}
+
+
+.gwiz .small-text {
+  font-size: 12px;
+  color: #AAA;
+}
+
+.gwiz .bold {
+  font-style: bold;
+}
+
+.gwiz a {
+  color: #b881e6;
+  letter-spacing: 0.2px;
 }

@@ -8,7 +8,7 @@ class ContentModule extends React.Component {
     return (
       <div className='cm-content gwiz'>
         <h2 className="title">Keyboard Shortcuts</h2>
-        <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to toggle the shortcuts menu</p>
+        <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to show/hide the shortcuts menu</p>
         <div>
           <div className="cm-ks-wrapper">
             {keyboardShortcutsData.map((ksSection) => (
@@ -24,9 +24,8 @@ class ContentModule extends React.Component {
               </div>
             ))}
             <hr />
-            <p className="cm-ks-action">For full list of Gmail shortcuts</p>
-            <p className="cm-ks-keys">?</p>
-            <p className="cm-ks-section-desc">Note: Keyboard shortcuts must be enabled in Gmail settings</p>
+            <p className="small-text bold">The default keyboard shortcuts must be enabled in Gmail settings.</p>
+            <p className="small-text">The above list is a subset of helpful shortcuts. For the full list of Gmail shortcuts, press <span className="ss-ks-keys">?</span>.</p>
           </div>
         </div>
       </div>

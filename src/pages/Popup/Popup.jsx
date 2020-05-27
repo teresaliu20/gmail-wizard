@@ -66,8 +66,10 @@ class Popup extends React.Component {
           <Toggle className="pu-toggle" id="2" name="hideShowShortcutsMenu" value={this.state.shortcutsMenuShow} onChange={this.hideShowShortcutsMenu}/>
           <p className="pu-toggle-label">Show/Hide Shortcuts Menu</p>
         </div>
-     
-        <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to toggle the shortcuts menu</p>
+        <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to show/hide the shortcuts menu</p>
+        <div className="pu-footer">
+          <p><a href="google.com">About</a>&#9;&middot;&#9;<a href="google.com">Report Issue</a>&#9;&middot;&#9;<a href="google.com">Give Feedback</a></p>
+        </div>
       </div>
     );
   }
