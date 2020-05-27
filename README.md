@@ -1,17 +1,23 @@
-# Gmail Wizard
+# 🧙‍♂️ Gmail Wizard
 
-> Gee Wiz! Become a pro of Gmail and declutter your inbox with ease!
+> Gee Wiz! I didn't know decluttering my Gmail inbox could be so easy!
+
 
 ### About
-
+---
 A simple chrome extension meant for you to declutter your Gmail's UI, learn Gmail's best keyboard shortcuts, and be breezing through your inbox like magic. With a quick shortcut to show the most helpful keyboard shortcuts, you can quickly learn shortcuts that will teach you to rarely touch your mouse all while speeding through emails. Our Chrome Extension also modifies the UI of Gmail, to be much more clean and easy to read.
 
+
 ### Screenshots
+---
 ![image](https://user-images.githubusercontent.com/22362476/82965372-eccca700-9f95-11ea-939f-a12178210d9d.png)
+
+
 ![image](https://user-images.githubusercontent.com/22362476/82965394-fb1ac300-9f95-11ea-9aff-a19fa1d7ab4a.png)
 
-### Installation
 
+### Installation
+---
 1. Clone or download this repository
 2. Run `npm install` to download necessary components
 3. Run `npm start` to compile, run the hot server, and generate the `Build` folder.
