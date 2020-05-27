@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import "../../shared/shared-styles.css";
 import './ContentModule.css';
 import keyboardShortcutsData from './keyboardShortcutsData.js';
@@ -26,6 +27,7 @@ class ContentModule extends React.Component {
             <hr />
             <p className="small-text bold">The default keyboard shortcuts must be enabled in Gmail settings.</p>
             <p className="small-text">The above list is a subset of helpful shortcuts. For the full list of Gmail shortcuts, press <span className="ss-ks-keys">?</span>.</p>
+            <Footer />
           </div>
         </div>
       </div>

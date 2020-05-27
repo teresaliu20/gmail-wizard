@@ -10,7 +10,7 @@
   color: #ddd;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
 }
 
 #cm .cm-title {
@@ -27,7 +27,7 @@
 }
 
 #cm .cm-ks-section-title {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 #cm .cm-ks-section-desc {

@@ -1,7 +1,7 @@
 const keyboardShortcutsData = [
   {
-    title: 'Navigation',
-    description: 'Works within the Threadlist',
+    title: 'Navigating the Mailbox',
+    description: 'Works within the Mailbox',
     shortcuts: [
       { action: 'Go to search bar', 'keys': '/' },
       { action: 'Select conversation', 'keys': 'x' },
@@ -10,12 +10,12 @@ const keyboardShortcutsData = [
       { action: 'Newer conversation', 'keys': 'k' },
       { action: 'Older conversation', 'keys': 'j' },
       { action: 'Open conversation', 'keys': 'o or Enter' },
-      { action: 'Back to Threadlist', 'keys': 'u' },
+      { action: 'Back to mailbox', 'keys': 'u' },
     ]
   },
   {
     title: 'Actions for Selected Conversations',
-    description: 'Works with both opened email conversations and with selection conversations in Threadlist',
+    description: 'Works with both opened email conversations and with selection conversations in Mailbox',
     shortcuts: [
       { action: 'Toggle start', 'keys': 's' },
       { action: 'Archive', 'keys': 'e' },

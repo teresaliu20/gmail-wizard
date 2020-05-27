@@ -1,5 +1,6 @@
 import React from 'react';
 import Toggle from '../../components/Toggle';
+import Footer from '../../components/Footer';
 import './Popup.css';
 import '../../shared/shared-styles.css';
 
@@ -67,9 +68,7 @@ class Popup extends React.Component {
           <p className="pu-toggle-label">Show/Hide Shortcuts Menu</p>
         </div>
         <p>Press <span className="ss-ks-keys">Cmd/Ctr + Shift + Y</span> to show/hide the shortcuts menu</p>
-        <div className="pu-footer">
-          <p><a href="google.com">About</a>&#9;&middot;&#9;<a href="google.com">Report Issue</a>&#9;&middot;&#9;<a href="google.com">Give Feedback</a></p>
-        </div>
+        <Footer />
       </div>
     );
   }
