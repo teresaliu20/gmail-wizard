@@ -1,6 +1,5 @@
 {
   "name": "Gmail Wizard",
-  "options_page": "options.html",
   "background": {
     "page": "background.html"
   },
