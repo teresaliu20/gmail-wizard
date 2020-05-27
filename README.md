@@ -29,7 +29,7 @@ A simple chrome extension meant for you to declutter your Gmail's UI, learn Gmai
 I built this extension using this great [React Chrome Extension boilerplate by lxieyang](https://github.com/lxieyang/chrome-extension-boilerplate-react). It was probably overkill to use React and Webpack on a simple extension, but I enjoyed the modularity of using React. I used [Figma](https://www.figma.com/) for quick designs.
 
 
-This extension is inspired by the existing Chrome Extension [Simplify by leggett](https://github.com/leggett/simplify) and by the email client [Superhuman](https://superhuman.com/). 
+This extension is inspired by the existing Chrome Extension [Simplify by leggett](https://github.com/leggett/simplify) and by the email app [Superhuman](https://superhuman.com/). 
 
 ---
 
