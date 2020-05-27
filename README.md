@@ -33,6 +33,8 @@ This extension is inspired by the existing Chrome Extension [Simplify by leggett
 
 ---
 
-Built out of boredom and for the desire for people not to overpay on email clients.
+Built out of boredom and for the desire for people not to overpay on email clients. I need to learn the keyboard shortcuts too.
+
 All inquiries, concerns, feedback can go to my email teresali@usc.edu.
+
 For bugs, please submit a Github issue or email me. Enjoy!
