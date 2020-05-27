@@ -33,4 +33,4 @@ This extension is inspired by the existing Chrome Extension [Simplify by leggett
 
 ---
 
-Built out of boredom and for the desire for people not to overpay on email clients. I need to learn the keyboard shortcuts too. Don't worry, I dont save any email data, all the code is purely frontend with no interaction to a backend server. All inquiries, concerns, feedback can go to my email teresali@usc.edu. For bugs, please submit a Github issue or email me. Enjoy!
+Built out of boredom and for the desire for people not to overpay on email clients. I need to learn the keyboard shortcuts too. Don't worry, I don't save any email data, all the code is purely frontend with no interaction to a backend server. All inquiries, concerns, feedback can go to my email teresali@usc.edu. For bugs, please submit a Github issue or email me. Enjoy!
