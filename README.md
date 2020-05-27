@@ -21,8 +21,7 @@ A simple chrome extension meant for you to declutter your Gmail's UI, learn Gmai
 4. Go to `chrome://extensions/` in your Chrome browser.
 5. Make sure you have Developer Mode enabled in your extensions.
 6. Click `Load unpacked` button and open the `Build` folder.
-7. Use chrome extension by going to [mail.google.com](https://mail.google.com/), toggle `Cmd/Ctrl + Shift + Y` to open shortcuts menu and click on the GWiz icon in the Extensions bar for more options.
-  - Make sure you have the default keyboard shortcuts already enabled on Gmail in the settings.
+7. Use chrome extension by going to [mail.google.com](https://mail.google.com/), toggle `Cmd/Ctrl + Shift + Y` to open shortcuts menu and click on the GWiz icon in the Extensions bar for more options. __Make sure you have the default keyboard shortcuts already enabled on Gmail in the settings.__
 
 ## Build Details
 
