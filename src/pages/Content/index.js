@@ -1,13 +1,6 @@
-import { printLine } from './modules/print';
 import ContentModule from './ContentModule';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
-console.log('trying to modify gmail');
-
-printLine("Using the 'printLine' function from the Print Module");
 
 const app = document.createElement('div');
 app.id = 'cm';
@@ -16,7 +9,6 @@ document.body.appendChild(app);
 document.body.classList.add('minimized');
 
 ReactDOM.render(<ContentModule />, app);
-// contentModule.style.visibility = "hidden";
 
 // get initial state of options from storage for initial content
 chrome.storage.local.get(

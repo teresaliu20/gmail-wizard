@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-boilerplate-react",
+  "name": "gmail-wizard",
   "version": "2.5.0",
-  "description": "A chrome extension boilerplate built with React 16 and Webpack 4",
+  "description": "Declutter your emails like magic",
   "license": "MIT",
   "repository": {
     "type": "git",

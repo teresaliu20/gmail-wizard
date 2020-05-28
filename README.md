@@ -4,7 +4,7 @@
 
 
 ## About
-A simple chrome extension meant for you to declutter your Gmail's UI, learn Gmail's best keyboard shortcuts, and be breezing through your inbox like magic. With a quick shortcut to show the most helpful keyboard shortcuts, you can quickly learn shortcuts that will teach you to rarely touch your mouse all while speeding through emails. Our Chrome Extension also modifies the UI of Gmail, to be much more clean and easy to read.
+A simple chrome extension to declutter your Gmail's UI, teach you Gmail's best keyboard shortcuts, and have you breezing through your inbox like magic. With a menu (accessible by shortcut of course) to show the most helpful keyboard shortcuts, you can quickly learn shortcuts that will teach you to rarely touch your mouse all while speeding through emails. Our Chrome Extension also modifies the UI of Gmail, to be much more clean and easy to read.
 
 
 ## Screenshots

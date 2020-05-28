@@ -2,12 +2,9 @@ import '../../assets/img/icon-34.png';
 import '../../assets/img/icon-128.png';
 
 console.log('This is the background page.');
-console.log('Put the background scripts here.');
-
 
 // add in keyboard shortcut to toggle keyboard shortcuts menu
 chrome.commands.onCommand.addListener((command) => {
-  console.log('Background: ', command);
   if (command === 'command-toggle-shortcut-menu') {
     // send message to content script
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

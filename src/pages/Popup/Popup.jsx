@@ -13,12 +13,10 @@ class Popup extends React.Component {
 
   componentDidMount() {
     chrome.storage.onChanged.addListener((changes, namespace) => {
-       console.log("changingggf")
-       console.log(changes)
        if ('shortcutsMenuShow' in changes) {
          this.setState({
            'shortcutsMenuShow': changes.shortcutsMenuShow.newValue
-         }, () => console.log(this.state))
+         })
        }
        else if ('minimizedViewShow' in changes) {
         this.setState({
@@ -42,9 +40,7 @@ class Popup extends React.Component {
     chrome.storage.local.get({'minimizedViewShow' : true}, (result) => {
       chrome.storage.local.set({'minimizedViewShow': !result.minimizedViewShow});
     });
-    this.setState({'minimizedViewShow': !this.state.minimizedViewShow}, () => {
-      console.log("toggled")
-    })
+    this.setState({'minimizedViewShow': !this.state.minimizedViewShow});
   }
 
   hideShowShortcutsMenu = () => {
