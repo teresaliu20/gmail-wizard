@@ -10,6 +10,23 @@ document.body.classList.add('minimized');
 
 ReactDOM.render(<ContentModule />, app);
 
+function addMinimizedView() {
+  document.body.classList.add('minimized');
+  document
+    .getElementsByClassName('nH oy8Mbf nn aeN')[0]
+    .classList.add('bhZ');
+  document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
+  // handle split pane view case, Nr UI vy Nm => vertical split, make wide-screen
+  if (document.getElementsByClassName('Nr UI vy Nm').length !== 0) {
+    document.querySelector('.minimized .bhZ + .bkK').style.maxWidth = "100%"
+  }
+}
+
+function removeMinimizedView() {
+  document.body.classList.remove('minimized');
+}
+
+
 // get initial state of options from storage for initial content
 chrome.storage.local.get(
   { minimizedViewShow: true, shortcutsMenuShow: true },
@@ -25,13 +42,9 @@ chrome.storage.local.get(
 
     // show minimized view based on options in storage
     if (result.minimizedViewShow) {
-      document.body.classList.add('minimized');
-      document
-        .getElementsByClassName('nH oy8Mbf nn aeN')[0]
-        .classList.add('bhZ');
-      document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
+      addMinimizedView();
     } else {
-      document.body.classList.remove('minimized');
+      removeMinimizedView();
     }
   }
 );
@@ -52,13 +65,9 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
   // toggle minimized view
   } else if ('minimizedViewShow' in changes) {
     if (changes.minimizedViewShow.newValue === true) {
-      document.body.classList.add('minimized');
-      document
-        .getElementsByClassName('nH oy8Mbf nn aeN')[0]
-        .classList.add('bhZ');
-      document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
+      addMinimizedView();
     } else {
-      document.body.classList.remove('minimized');
+      removeMinimizedView();
     }
   }
 });
