@@ -16,10 +16,6 @@ function addMinimizedView() {
     .getElementsByClassName('nH oy8Mbf nn aeN')[0]
     .classList.add('bhZ');
   document.getElementsByClassName('nH bAw nn')[0].classList.add('it');
-  // handle split pane view case, Nr UI vy Nm => vertical split, make wide-screen
-  if (document.getElementsByClassName('Nr UI vy Nm').length !== 0) {
-    document.querySelector('.minimized .bhZ + .bkK').style.maxWidth = "100%"
-  }
 }
 
 function removeMinimizedView() {
